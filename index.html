@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One Piece</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5 bg-dark text-white text-center">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/one-piece-logo.png" alt="Logotipo de One Piece" class="nav-img" loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5 text-center">
+            <div class="inicio-fundo d-flex flex-column align-items-center">
+                <h1 class="display-4 text-warning fw-bold">Bem-vindo ao mundo de One Piece!</h1>
+                <img src="img/luffy.jpg" alt="Luffy" class="mb-3" width="300" height="300" loading="lazy">
+                <a href="#sobre" class="btn btn-danger btn-lg fw-semibold">Embarque nessa aventura!</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="my-5 pt-6 text-center">
+            <div class="container">
+                <h2 class="text-danger">O que é One Piece?</h2>
+                <p class="p-2">One Piece é um anime e mangá criado por Eiichiro Oda, que narra a história de Monkey D. Luffy e sua tripulação em busca do lendário tesouro One Piece. A série é cheia de aventuras, batalhas épicas e mensagens de amizade e superação.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="text-center">
+            <h2 class="text-primary pt-5">Galeria</h2>
+            <div class="container p-3 mt-3">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/crew.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/going-merry.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="text-center">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 bg-light p-4">
+                    <h2 class="mb-3">Entre em contato com a tripulação</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome pirata">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Mande um recado para a tripulação"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>Acompanhe as aventuras:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por fãs de One Piece. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
